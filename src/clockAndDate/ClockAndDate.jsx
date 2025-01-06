@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from './Index.module.css'
+import styles from './ClockAndDate.module.css'
 
 function ClockAndDate() {
     const [time, setTime] = useState(new Date())

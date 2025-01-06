@@ -1,4 +1,4 @@
-import ClockAndDate from './clockAndDate/Index.jsx'
+import ClockAndDate from './clockAndDate/ClockAndDate.jsx'
 import Weather from './weather/Index.jsx'
 import Links from './links/Links.jsx'
 import Notes from './notes/Notes.jsx'
