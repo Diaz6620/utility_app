@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import CitySelector from "./CitySelector"
 
+const apiKey = import.meta.env.VITE_API_KEY
+
 function Weather() {
   const [weatherData, setWeatherData] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -11,7 +13,7 @@ function Weather() {
     const fetchWeather = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=812f1314d5e54007a3d92843241907&q=${city}&aqi=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&aqi=no`);
         if (!response.ok) {
           throw new Error("Error al obtener los datos del clima")
         }
