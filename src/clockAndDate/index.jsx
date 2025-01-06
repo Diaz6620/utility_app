@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import styles from './Index.module.css'
 
 function ClockAndDate() {
     const [time, setTime] = useState(new Date())
@@ -22,7 +23,7 @@ function ClockAndDate() {
 
     return (
         
-        <section>
+        <section className={styles.clockContainer}>
             <div>{time.toLocaleTimeString()}</div>
             <div>{date(time)}</div>
         </section>

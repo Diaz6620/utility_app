@@ -1,0 +1,73 @@
+.mainContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+  
+.mainData {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+  
+.mainData div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.mainData img {
+    width: 80px;
+    height: 80px;
+}
+  
+.mainData p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+  
+.secData {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    max-width: 600px;
+}
+  
+.forecast {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    min-width: 80px;
+}
+  
+.forecast p {
+    margin: 5px 0;
+    text-align: center;
+}
+  
+.forecast img {
+    width: 40px;
+    height: 40px;
+}
+  
+.forecast p:last-child {
+    font-size: 0.9em;
+}
+  

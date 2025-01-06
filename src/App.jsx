@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import ClockAndDate from './clockAndDate/Index.jsx'
 import Weather from './weather/Index.jsx'
 import Links from './links/Links.jsx'
+import Notes from './notes/Notes.jsx'
 
 function App() {
   
@@ -11,6 +11,7 @@ function App() {
       <ClockAndDate />
       <Weather />
       <Links />
+      <Notes />
     </>
   )
 }
